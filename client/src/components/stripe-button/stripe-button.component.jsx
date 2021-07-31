@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = 'pk_test_b7a3hFL5nC3qlBCZ6bQACpez00gyMMP52H';
+  const publishableKey = 'pk_test_51JF1GQEdARNw8OX73pBELPXgHhz09zvuQrm7p2ouzVvTAI8WYaJZT8K49swyrC2wctfz1DNT4WnOsn2pYvZAaPDW00ZLTD9KW4';
 
   const onToken = token => {
     axios({
@@ -29,10 +29,10 @@ const StripeCheckoutButton = ({ price }) => {
   return (
     <StripeCheckout
       label='Pay Now'
-      name='CRWN Clothing Ltd.'
+      name='Buy-Now-Ecommerce Ltd.'
       billingAddress
       shippingAddress
-      image='https://sendeyo.com/up/d/f3eb2117da'
+      image='https://svgshare.com/i/CUz.svg'
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel='Pay Now'
